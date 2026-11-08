@@ -10,6 +10,20 @@
 
 ---
 
+### 🚀 Featured Projects
+
+| Project | What it is | Stack |
+|---|---|---|
+| [lesson-plan-assistant](https://github.com/isaefe7/lesson-plan-assistant) | CLI that asks a Claude model for a lesson plan and validates the result in code, with a repair loop and 31 offline tests | Python, LLM API, pytest |
+| [prompt-hub](https://github.com/isaefe7/prompt-hub) | Tested library of prompt templates for teachers and instructional designers | Markdown, Python |
+| [ders-saati](https://github.com/isaefe7/ders-saati) | Timetable app with weekly lesson notifications; imports XLS, CSV, JSON, XML | Flutter, Dart, Supabase |
+| [election-database](https://github.com/isaefe7/election-database) | Election data model from Chen diagram to T-SQL schema and queries | SQL Server, T-SQL |
+| [web-development-coursework](https://github.com/isaefe7/web-development-coursework) | Multi-page sites and weekly exercises | HTML, CSS, JavaScript |
+
+🌐 **Portfolio:** [isaefe7.github.io](https://isaefe7.github.io) · 🇹🇷 [Türkçe](https://isaefe7.github.io/tr/)
+
+---
+
 ### 🛠️ Tech Stack & Skills
 
 #### Languages & Core Frameworks
@@ -44,8 +58,8 @@
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=tokyonight" alt="İsa EFE's GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=tokyonight" alt="Top Languages" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=isaefe7&show_icons=true&theme=tokyonight" alt="İsa EFE's GitHub Stats" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=isaefe7&layout=compact&theme=tokyonight" alt="Top Languages" width="48%" />
 </p>
 
 ---
