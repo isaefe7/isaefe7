@@ -1,0 +1,25 @@
+{
+  "pazartesi": [
+    { "saat": "09:00 - 12:00", "ders": "Rehberlik" },
+    { "saat": "13:00 - 15:00", "ders": "Proje Yönetimi" }
+  ],
+  "sali": [
+    { "saat": "10:00 - 12:00", "ders": "Veri Yapıları" },
+    { "saat": "13:00 - 16:00", "ders": "Mobil Programlama" }
+  ],
+  "carsamba": [
+    { "saat": "09:00 - 12:00", "ders": "Eğitimde Teknoloji Entegrasyonu" },
+    { "saat": "13:00 - 15:00", "ders": "Yapay Zeka Uygulamaları" }
+  ],
+  "persembe": [
+    { "saat": "09:00 - 13:00", "ders": "Masaüstü Yayıncılık" },
+    { "saat": "14:00 - 17:00", "ders": "Oyun Programlama (Unity)" }
+  ],
+  "cuma": [
+    { "saat": "09:00 - 12:00", "ders": "Öğretim Tasarımı" },
+    { "saat": "13:00 - 15:00", "ders": "Seminer" },
+    { "saat": "15:00 - 17:00", "ders": "Topluma Hizmet Uygulamaları" }
+  ],
+  "cumartesi": [],
+  "pazar": []
+}

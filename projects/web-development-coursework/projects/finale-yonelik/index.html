@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sport — Öğrenci Projesi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-inner">
+        <h1 class="brand">Sport</h1>
+        <nav>
+          <ul class="menu">
+            <li><a href="#sec1">Giriş</a></li>
+            <li><a href="#sec2">Antrenman</a></li>
+            <li><a href="#sec3">Hesapla</a></li>
+            <li><a href="#sec4">Topluluk</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="sec1" class="panel">
+        <h2>Hoş geldiniz</h2>
+        <p>Basit, beyaz-kırmızı tema ile dört parçalı öğrenci projesi.</p>
+      </section>
+
+      <section id="sec2" class="panel">
+        <h2>Antrenman İpuçları</h2>
+        <ul id="tipsList" class="list">
+          <li>Yavaş ısınma</li>
+          <li>Doğru form</li>
+        </ul>
+        <div class="row">
+          <input id="newTip" type="text" placeholder="Yeni ipucu" />
+          <button id="addTipBtn" class="btn">Ekle</button>
+        </div>
+      </section>
+
+      <section id="sec3" class="panel">
+        <h2>Küçük Hesaplayıcı</h2>
+        <div class="col">
+          <label for="weight">Ağırlık (kg)</label>
+          <input id="weight" type="number" min="20" max="200" />
+          <label for="hours">Haftalık antrenman (saat)</label>
+          <input id="hours" type="number" min="0" max="40" step="0.5" />
+          <button id="calcBtn" class="btn primary">Hesapla</button>
+          <p id="calcResult" class="result" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section id="sec4" class="panel">
+        <h2>Topluluk</h2>
+        <ul id="players" class="list">
+          <li>Ali</li>
+          <li>Deniz</li>
+        </ul>
+        <div class="row">
+          <input id="playerName" type="text" placeholder="Yeni katılımcı" />
+          <button id="addPlayerBtn" class="btn">Ekle</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <small>© Öğrenci Projesi — Beyaz & Kırmızı</small>
+      </div>
+    </footer>
+
+    <script src="index.js" defer></script>
+  </body>
+</html>

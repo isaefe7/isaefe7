@@ -1,0 +1,30 @@
+name: ders_saati
+description: "Imports a class timetable (XLS/CSV/JSON/XML) and schedules weekly local notifications before each lesson."
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  excel2003: ^1.0.0
+  file_picker: ^11.0.2
+  flutter_local_notifications: ^18.0.1
+  flutter_timezone: ^4.0.1
+  google_fonts: ^6.2.1
+  timezone: ^0.10.1
+  csv: ^8.0.0
+  xml: ^6.6.1
+  supabase_flutter: ^2.14.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/universiteler.csv

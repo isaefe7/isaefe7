@@ -1,0 +1,46 @@
+body {
+  background-color: azure;
+}
+.header {
+  /*title*/
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.navigation {
+  display: flex;
+  height: 20px;
+  justify-content: space-around;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#home,
+#about,
+#education,
+#future {
+  text-decoration: none;
+  font-size: 20px;
+}
+.button {
+  /*middle button*/
+  display: flex;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit {
+  /*form*/
+  display: flex;
+  justify-content: center;
+}
+
+#output {
+  /*paragraph*/
+  display: flex;
+  padding-bottom: 2px;
+  justify-content: center;
+}

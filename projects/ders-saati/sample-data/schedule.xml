@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ders_programi>
+    <gun isim="Pazartesi">
+        <program>
+            <saat>09:00 - 12:00</saat>
+            <ders>Rehberlik</ders>
+        </program>
+        <program>
+            <saat>13:00 - 15:00</saat>
+            <ders>Proje Yönetimi</ders>
+        </program>
+    </gun>
+    <gun isim="Salı">
+        <program>
+            <saat>10:00 - 12:00</saat>
+            <ders>Veri Yapıları</ders>
+        </program>
+        <program>
+            <saat>13:00 - 16:00</saat>
+            <ders>Mobil Programlama</ders>
+        </program>
+    </gun>
+    <gun isim="Çarşamba">
+        <program>
+            <saat>09:00 - 12:00</saat>
+            <ders>Eğitimde Teknoloji Entegrasyonu</ders>
+        </program>
+        <program>
+            <saat>13:00 - 15:00</saat>
+            <ders>Yapay Zeka Uygulamaları</ders>
+        </program>
+    </gun>
+    <gun isim="Perşembe">
+        <program>
+            <saat>09:00 - 13:00</saat>
+            <ders>Masaüstü Yayıncılık</ders>
+        </program>
+        <program>
+            <saat>14:00 - 17:00</saat>
+            <ders>Oyun Programlama (Unity)</ders>
+        </program>
+    </gun>
+    <gun isim="Cuma">
+        <program>
+            <saat>09:00 - 12:00</saat>
+            <ders>Öğretim Tasarımı</ders>
+        </program>
+        <program>
+            <saat>13:00 - 15:00</saat>
+            <ders>Seminer</ders>
+        </program>
+        <program>
+            <saat>15:00 - 17:00</saat>
+            <ders>Topluma Hizmet Uygulamaları</ders>
+        </program>
+    </gun>
+    <gun isim="Cumartesi" />
+    <gun isim="Pazar" />
+</ders_programi>

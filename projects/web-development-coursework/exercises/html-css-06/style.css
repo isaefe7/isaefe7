@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap");
+
+body {
+  background: blanchedalmond;
+  color: black;
+  display: flex; /* Use Flexbox layout HER ŞEYİ SÜTUNDAN SATIRA ATIYOR */
+  border: 3px solid rgb(255, 255, 255); /* Border around the body */
+  min-height: 900px;
+  /* justify-content: space-between;  Distribute items evenly with space between */
+  /* justify-content: flex-end; Align items to the right */
+  /* justify-content: flex-start; Align items to the left */
+  /* justify-content: center; Center items horizontally */
+  justify-content: center;
+  /* align-content: flex-end; Align items to the bottom of the container */
+  align-content: center; /* Center items vertically */
+  /* align-items vs align-content:
+     align-items: Aligns items along the cross axis (perpendicular to the main axis).
+     align-content: Aligns the entire flex lines when there is extra space in the cross axis. */
+  flex-direction: row; /*Arrange items in a row */
+  /* flex-direction: column; */
+  gap: 20px; /* Space between items */
+  /* flex-wrap: wrap; Allow items to wrap to the next line if necessary */
+  /* flex-shrink: 1; Prevent items from shrinking */
+  flex-grow: 1; /* Allow items to grow to fill available space */
+  /* flex-grow: 0; DONT Prevent items from growing */
+}
+.box {
+  width: 400px;
+  height: 600px;
+  background-color: coral;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: uppercase;
+  border: 3px solid rgb(255, 255, 255);
+}
+h1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 2em;
+  letter-spacing: 2px;
+  padding: 12px;
+}
+ul {
+  justify-items: left;
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  margin: 8px 0;
+  font-size: 20px;
+}
+h2 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 2em;
+  letter-spacing: 2px;
+  padding: 8px;
+}

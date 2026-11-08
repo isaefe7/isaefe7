@@ -1,0 +1,325 @@
+/* 1. FONT VE TEMEL DEĞİŞKENLER (TASARIM SİSTEMİ) */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap");
+
+:root {
+  /* Renk Paleti (Aydınlık Mod) */
+  --bg-page: #f1f3f8;
+  --bg-card: #ffffff;
+  --text-primary: #1a1a2e;
+  --text-secondary: #5c5c7a;
+  --border-color: #e0e0e6;
+  --shadow-color: rgba(0, 0, 0, 0.08);
+  --gradient-main: linear-gradient(120deg, #5e72e4, #825ee4);
+  --gradient-text: linear-gradient(90deg, #5e72e4, #e45ec9);
+  --primary-color: #5e72e4;
+
+  /* Global Stil Değişkenleri */
+  --radius-small: 6px;
+  --radius-medium: 12px;
+  --radius-large: 16px;
+  --shadow: 0 4px 12px var(--shadow-color);
+  --shadow-hover: 0 8px 24px var(--shadow-color);
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* 2. KARANLIK MOD DEĞİŞKENLERİ */
+body.dark-mode {
+  --bg-page: #121212;
+  --bg-card: #1e1e1e;
+  --text-primary: #f2f2f7;
+  --text-secondary: #a0a0b8;
+  --border-color: #2c2c2c;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+/* 3. TEMEL RESETLEME VE BODY STİLLERİ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* Yumuşak kaydırma */
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1,
+h2 {
+  color: var(--text-primary);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* 4. GLASSMORPHISM HEADER VE NAVİGASYON */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 5%;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  /* Camsı etki */
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+  transition: var(--transition);
+}
+
+body.dark-mode header {
+  background: rgba(30, 30, 30, 0.7);
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-weight: 600;
+  padding: 8px 16px;
+  margin-left: 8px;
+  border-radius: var(--radius-small);
+  transition: var(--transition);
+}
+
+header nav a:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* 5. GİRİŞ ANİMASYONLARI */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 6. ANA İÇERİK (MAIN) VE KARTLAR (PART) */
+main {
+  flex: 1;
+  display: grid;
+  /* Profesyonel, otomatik sığan grid: 
+     Her kart en az 340px olacak. Sığdığı kadar yan yana koy. 
+     Bu, çoğu ekran için media query yazma ihtiyacını ortadan kaldırır. */
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 30px;
+  padding: 40px 5%;
+  width: 100%;
+}
+
+.part {
+  background: var(--bg-card);
+  border-radius: var(--radius-large);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+
+  /* Animasyonu burada uyguluyoruz */
+  opacity: 0; /* Başlangıçta görünmez */
+  animation: slideInUp 0.6s ease-out forwards;
+}
+
+/* Kartların peş peşe gelmesi için animasyon gecikmesi */
+.part:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.part:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.part:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+}
+
+.text-content {
+  padding: 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 7. ÖZEL KART STİLLERİ */
+
+/* Kart 1: Resim üstte */
+.part.one img {
+  border-radius: var(--radius-large) var(--radius-large) 0 0;
+}
+
+/* Gradient Başlık */
+.gradient-text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 900;
+}
+
+/* Kart 2: Resim altta */
+.part.two {
+  flex-direction: column-reverse; /* Resmi alta iter */
+}
+.part.two img {
+  border-radius: 0 0 var(--radius-large) var(--radius-large);
+}
+
+/* Kart 3: CTA Gradient Arkaplan */
+.part.three.gradient-bg {
+  background: var(--gradient-main);
+  color: #fff;
+}
+
+.part.three.gradient-bg h2 {
+  color: #fff;
+}
+.part.three.gradient-bg p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* 8. PROFESYONEL BUTON SİSTEMİ (.btn) */
+.btn {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 12px 24px;
+  border-radius: var(--radius-small);
+  transition: var(--transition);
+  margin-top: auto; /* Butonu kartın en altına iter */
+  text-align: center;
+  align-self: flex-start; /* Butonun tüm genişliği kaplamasını engeller */
+}
+/* 11. YENİ ALT SAYFA STİLLERİ (portfolyo.html, content.html) */
+
+/* Alt sayfalardaki ana içerik alanı */
+.sub-page-main {
+  /* Ana sayfadaki kartlara benzemesi için aynı stili kullanıyoruz */
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 40px;
+  background: var(--bg-card);
+  border-radius: var(--radius-large);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+
+  /* Aynı giriş animasyonu */
+  opacity: 0;
+  animation: slideInUp 0.6s ease-out forwards;
+}
+
+/* Sayfa alt başlığı (Portfolyo ve Content'teki açıklama) */
+.page-description {
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  margin-top: -10px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 20px;
+}
+
+/* PORTFOLYO SAYFASI (portfolyo.html) */
+.portfolio-grid {
+  display: grid;
+  /* Portfolyo için otomatik sığan grid */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.portfolio-item {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-medium);
+  overflow: hidden;
+  transition: var(--transition);
+  background: var(--bg-page); /* Karanlık modda da çalışır */
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.portfolio-item img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.portfolio-item h3 {
+  color: var(--text-primary);
+  padding: 15px 20px 0px 20px;
+  margin-bottom: 5px;
+}
+.portfolio-item p {
+  padding: 0px 20px 15px 20px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* İÇERİK SAYFASI (content.html) */
+.content-article .content-image {
+  width: 100%;
+  height: auto;
+  max-height: 400px; /* Resim çok büyümesin */
+  object-fit: cover;
+  border-radius: var(--radius-medium);
+  margin: 10px 0 30px 0;
+  border: 1px solid var(--border-color);
+}
+
+.content-article h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.content-article p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}

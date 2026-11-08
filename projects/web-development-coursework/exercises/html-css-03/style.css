@@ -1,0 +1,86 @@
+body {
+  margin: 20px;
+  font-family: "poppins";
+  background: #d1dedd;
+}
+ul,
+li {
+  padding: 0;
+  list-style-type: none;
+}
+h1,
+h2,
+h3 {
+  color: #767f7e;
+}
+p {
+  color: #928b8a;
+}
+header {
+  text-align: center;
+  margin: 40px auto;
+  border-bottom: 2px solid #767f7e;
+}
+.grid-container {
+  max-width: 1200px;
+  margin: 20px;
+  display: grid;
+  /*
+  Bu kod ile yana kaydırma yaptırdım 
+  grid-template-columns: repeat(3, 1fr);
+  alttaki kod ile aynı sonucu verir
+  */
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+}
+.featured {
+  /* featured alanı grid yapısında 3 sütunluk alanı kaplasın */
+  grid-column: span 3;
+  /* featured alanının tamamını kaplaması için */
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  /* featured alanındaki öğeler arasına boşluk ekleme */
+  gap: 60px;
+  /* itemleri dikeyde ortalama */
+  align-items: center;
+  border: 2px solid #767f7e;
+  /* iç boşluk ekleme */
+}
+article img,
+.featured img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  /* kenarlık ekleme */
+  border: 3px solid #7a7a7a;
+  /* köşeleri yuvarlatma */
+  border-radius: 6px;
+}
+margin p,
+article h3 {
+  /* metinleri ortalama */
+  text-align: left;
+  margin: 19px 12px; /* üst-alt 19px, sağ-sol 12px boşluk */
+}
+
+/* Ekran genişliği 900px veya daha az olduğunda uygulanacak stiller */
+@media screen and (max-width: 900px) {
+  article {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 760px) {
+  article {
+    display: block; /* Blok düzeneğine geçiş yapar */
+  }
+}
+/* Tüm sayfayı kapsayan merkezleme yapısı */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* yatayda ortalar */
+  justify-content: flex-start; /* istersen ortasına almak için 'center' yapabilirsin */
+}

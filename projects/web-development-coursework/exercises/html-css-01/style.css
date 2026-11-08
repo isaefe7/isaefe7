@@ -1,0 +1,196 @@
+/*
+2 FARKLI CSS KULLANIMI VAR. BİRİSİ INDEX İÇİNDE YAZIM DİĞERİ DE AYRI CSS İÇERİSİNDE YAZIM.
+AYRICA CSS İLE HTML YORUM SATIRI EKLEME KOMUTLARI FARKLI BUNA DİKKAT ET
+*/
+h1,
+h2,
+h3,
+h4 {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: center;
+}
+h2 {
+  color: blue;
+  font-size: 24px;
+  font-style: normal;
+}
+h3 {
+  color: rgb(36, 164, 85);
+  font-size: 20px;
+  font-style: normal;
+}
+h4 {
+  color: rgba(255, 99, 71, 1);
+  font-style: normal;
+  text-align: center;
+}
+aside {
+  background-color: #d6d0d0;
+  border: 5px solid #1098ad;
+}
+/* aside ile html içinde aside olan tüm kodları kapsayarak üzerinde oynama yaptık
+
+Border kullanırken tüm sayfayı kaplamasını istemiyorsan border-left ya da border-top ya da
+border-right ya da border-bottom gibi komutlar ile sadece istediğin kenarda border kullanabilirsin
+
+Ayrıca border solid yerine border dashed ya da border dotted gibi farklı kenarlıklar da kullanabilirsin
+*/
+
+p {
+  color: black;
+  font-size: 12px;
+  line-height: 1.5;
+}
+/*
+li {
+  color: black;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+footer p {
+  font-size: 18px;
+}
+
+article header h2 {
+  font-size: 18px;
+}
+
+AŞAĞIDAKİ KODLAR ID TANIMLAYIP ÖZELLİKLE ÜSTÜNDE DEĞİŞİKLİK YAPILABİLECEĞİNİ GÖSTERMEK İÇİN EKLENDİ
+*/
+
+#author {
+  color: rgb(227, 11, 11);
+}
+#copyright {
+  color: gold;
+  font-size: 14px;
+}
+
+/* Id yerine class verirsek # yerine . ile başlatmalıyız Class ile aynı anda bir çok 
+elementi tek kodla değişeceğiz*/
+.info {
+  color: purple;
+}
+.related-posts {
+  list-style: none;
+}
+/* PSEUDO CLASS*/
+li:first-child {
+  font-style: italic;
+}
+/* 
+html içerisinde li komutunda yazdığımız ilk li'lerin hepsini italik yapar
+li:second-child { } html içerisinde yazdığımız tüm 2. li'leri değiştirir
+li:nth-child(2) { } bu da 2. li'leri değiştirir. Daha kolay komuttur
+li:nth-child(odd) { } html içerisinde yazdığımız tüm tek li'leri değiştirir
+li:nth-child(even) { } html içerisinde yazdığımız tüm çift li'leri değiştirir
+li:last-child { } html içerisinde yazdığımız tüm son li'leri değiştirir
+*/
+
+/* AŞAĞIDAKİ KODLAR İSE HOVER KOMUTUNU GÖSTERMEK İÇİN EKLENDİ */
+a:link {
+  text-decoration: none;
+  /* linklerin altını çizmez */
+  color: black;
+  /* linklerin rengini siyah yapar */
+  padding: 6px;
+  /* linklerin etrafına boşluk ekler */
+  background-color: rgba(124, 104, 238, 0.594);
+  /* linklerin arkaplan rengini belirler */
+  border-radius: 10px;
+  /* linklerin köşelerini yuvarlatır */
+}
+a:visited {
+  color: green;
+  /* linke tıklandıktan sonraki renk */
+}
+a:hover {
+  color: red; /* hover linkin üzerine gelince altını çizer ve rengini kırmızı yapar */
+  text-decoration: underline; /* linkin üzerine gelince altını çizer */
+  font-weight: bold; /* linkin üzerine gelince kalın yapar */
+}
+a:active {
+  background-color: orange; /* linke tıklandığında arkaplan rengi turuncu olur */
+}
+/* HOVER KOMUTU İLE BİRLİKTE KULLANILAN DİĞER KOMUTLAR
+a:link { } linkin normal hali
+a:visited { } linke tıklandıktan sonraki hali
+a:hover { } linkin üzerine gelinceki hali
+a:active { } linke tıklandığında ki hali
+*/
+
+header {
+  background-color: #f4f4f4;
+  border-bottom: 5px solid #1098ad;
+  padding: 20px;
+  /* padding iç boşluk verir ve sitede sağ tık yapıp incele kısmından görülebilir*/
+  text-align: center;
+  margin: 0;
+  /* margin dış boşluk verir ve sitede sağ tık yapıp incele kısmından görülebilir
+  margin: 0; ile tüm kenarlara 0 boşluk verdik*/
+}
+
+aside {
+  padding: 10px;
+  margin: 10px;
+  width: 750px; /* kenar boşlukları ile birlikte toplam genişlik 770px olur */
+}
+
+/* 
+
+a:link { 
+Ziyaret edilmemiş linklerin stili
+}
+
+a:visited { 
+Ziyaret edilmiş linklerin stili
+}
+
+a:hover { 
+Linkin üzerine gelindiğinde uygulanacak stil
+}
+
+a:active { 
+tıklandığında uygulanacak stil
+}
+
+*/
+
+.container {
+  background-color: #eee;
+  max-width: 620px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  /* grid-template-rows: 100px 100px 100px; */
+  gap: 10px; /* kutular arası boşluk */
+  /* justify-items: auto; yatay hizalama */
+  /* align-items: center;  dikey hizalama */
+}
+
+.container > div {
+  background-color: #ccc;
+  padding: 20px;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.container > div:nth-child(1) {
+  grid-column: 1 / span 3;
+  /* justify-self: end;  yatay hizalama en sağa */
+}
+.container > div:nth-child(2) {
+  grid-column: span 2;
+  /* align-self: last baseline; dikey hizalama en alta */
+}
+.container > div:nth-child(6) {
+  grid-column: 2 / 3;
+  justify-self: left;
+}

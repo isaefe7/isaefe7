@@ -14,13 +14,13 @@
 
 | Project | What it is | Stack |
 |---|---|---|
-| [lesson-plan-assistant](https://github.com/isaefe7/lesson-plan-assistant) | CLI that asks a Claude model for a lesson plan and validates the result in code, with a repair loop and 31 offline tests | Python, LLM API, pytest |
-| [prompt-hub](https://github.com/isaefe7/prompt-hub) | Tested library of prompt templates for teachers and instructional designers | Markdown, Python |
-| [ders-saati](https://github.com/isaefe7/ders-saati) | Timetable app with weekly lesson notifications; imports XLS, CSV, JSON, XML | Flutter, Dart, Supabase |
-| [election-database](https://github.com/isaefe7/election-database) | Election data model from Chen diagram to T-SQL schema and queries | SQL Server, T-SQL |
-| [web-development-coursework](https://github.com/isaefe7/web-development-coursework) | Multi-page sites and weekly exercises | HTML, CSS, JavaScript |
+| [lesson-plan-assistant](https://github.com/isaefe7/isaefe7/tree/main/projects/lesson-plan-assistant) | CLI that asks a Claude model for a lesson plan and validates the result in code, with a repair loop and 31 offline tests | Python, LLM API, pytest |
+| [prompt-hub](https://github.com/isaefe7/isaefe7/tree/main/projects/prompt-hub) | Tested library of prompt templates for teachers and instructional designers | Markdown, Python |
+| [ders-saati](https://github.com/isaefe7/isaefe7/tree/main/projects/ders-saati) | Timetable app with weekly lesson notifications; imports XLS, CSV, JSON, XML | Flutter, Dart, Supabase |
+| [election-database](https://github.com/isaefe7/isaefe7/tree/main/projects/election-database) | Election data model from Chen diagram to T-SQL schema and queries | SQL Server, T-SQL |
+| [web-development-coursework](https://github.com/isaefe7/isaefe7/tree/main/projects/web-development-coursework) | Multi-page sites and weekly exercises | HTML, CSS, JavaScript |
 
-🌐 **Portfolio:** [isaefe7.github.io](https://isaefe7.github.io) · 🇹🇷 [Türkçe](https://isaefe7.github.io/tr/)
+🌐 **Portfolio:** [isaefe7.github.io](https://isaefe7.github.io/isaefe7/portfolio/) · 🇹🇷 [Türkçe](https://isaefe7.github.io/isaefe7/portfolio/tr/)
 
 ---
 
