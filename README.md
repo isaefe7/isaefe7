@@ -19,6 +19,7 @@
 | [ders-saati](https://github.com/isaefe7/isaefe7/tree/main/projects/ders-saati) | Timetable app with weekly lesson notifications; imports XLS, CSV, JSON, XML | Flutter, Dart, Supabase |
 | [election-database](https://github.com/isaefe7/isaefe7/tree/main/projects/election-database) | Election data model from Chen diagram to T-SQL schema and queries | SQL Server, T-SQL |
 | [web-development-coursework](https://github.com/isaefe7/isaefe7/tree/main/projects/web-development-coursework) | Multi-page sites and weekly exercises | HTML, CSS, JavaScript |
+| [arduino-distance-meter](https://github.com/isaefe7/isaefe7/tree/main/projects/arduino-distance-meter) | Ultrasonic distance meter with an LCD, simulated in Tinkercad | Arduino, C++, IoT |
 
 🌐 **Portfolio:** [isaefe7.github.io](https://isaefe7.github.io/isaefe7/portfolio/) · 🇹🇷 [Türkçe](https://isaefe7.github.io/isaefe7/portfolio/tr/)
 
